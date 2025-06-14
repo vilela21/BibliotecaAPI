@@ -2,8 +2,7 @@
 API de Catálogo de Livros e Gestão de Bibliotecários.
 Esta API foi uma prova realizada com o valor de 40 pontos.
 
-Anotação JSON
-
+A seguir, anotação JSON
 Tabela: 'livro':
 
 
