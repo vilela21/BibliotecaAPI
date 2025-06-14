@@ -8,6 +8,7 @@ Tabela: 'livro':
 
 {
 
+    {
     "titulo": "",
     "autor": "",
     "genero": "",
@@ -24,6 +25,7 @@ Tabela 'bibliotecario':
 
 {
 
+    {    
         "nome": "",
         "email": ""
     }
