@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Livros</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+  <nav class="bg-red-800 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-white font-bold text-xl">Gestão de Livros</h1>
+    </div>
+  </nav>
+
+  <div class="container mx-auto mt-8 p-4">
+    <h2 class="text-2xl font-bold mb-4">Cadastrar novos Livros</h2>
+    <form id="imageForm" class="bg-white p-4 rounded shadow-md" onsubmit="return adicionarLivro(event)">
+      <div class="mb-4">
+        <label for="titulo" class="block font-medium text-gray-700 mb-2">Título</label>
+        <input type="text" id="titulo" class="w-full p-2 border border-gray-300 rounded" required />
+      </div>
+      <div class="mb-4">
+        <label for="autor" class="block font-medium text-gray-700 mb-2">Autor</label>
+        <input type="text" id="autor" class="w-full p-2 border border-gray-300 rounded" required />
+      </div>
+
+      <div class="mb-4">
+        <label for="genero" class="block font-medium text-gray-700 mb-2">Gênero</label>
+        <input type="text" id="genero" class="w-full p-2 border border-gray-300 rounded" required />
+      </div>
+
+      <div class="mb-4">
+        <label for="status" class="block font-medium text-gray-700 mb-2">Status</label>
+        <input type="text" id="status" class="w-full p-2 border border-gray-300 rounded" required />
+      </div>
+
+      <div class="mb-4">
+        <label for="dataCadastro" class="block font-medium text-gray-700 mb-2">Data de Cadastro</label>
+        <input type="date" id="dataCadastro" class="w-full p-2 border border-gray-300 rounded" required />
+      </div>
+
+  <div class="mb-4">
+  <label for="bibliotecarioSelect" class="block font-medium text-gray-700 mb-2">Bibliotecário</label>
+  <select id="bibliotecarioSelect" class="w-full p-2 border border-gray-300 rounded">
+    <option value="">Nenhum (livro disponível)</option>
+  </select>
+</div>
+
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Adicionar</button>
+    </form>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4">Tabela de Livros</h2>
+    <table class="w-full bg-white rounded shadow table-auto">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="px-4 py-2">ID</th>
+          <th class="px-4 py-2">Título</th>
+          <th class="px-4 py-2">Autor</th>
+          <th class="px-4 py-2">Gênero</th>
+          <th class="px-4 py-2">Status</th>
+          <th class="px-4 py-2">Data de Cadastro</th>
+          <th class="px-4 py-2">ID Bibliotecário</th>
+          <th class="px-4 py-2">Editar</th>
+          <th class="px-4 py-2">Excluir</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaLivro">
+        <!-- Linhas inseridas via JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="./js/livro.js"></script>
+</body>
+</html>
