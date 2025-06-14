@@ -7,6 +7,7 @@ Anotação JSON
 Tabela: 'livro':
 
 {
+
     "titulo": "",
     "autor": "",
     "genero": "",
@@ -22,6 +23,7 @@ Tabela: 'livro':
 Tabela 'bibliotecario':
 
 {
+
         "nome": "",
         "email": ""
     }
