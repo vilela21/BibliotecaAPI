@@ -6,7 +6,7 @@ Anotação JSON
 
 Tabela: 'livro':
 
-{
+
 
     {
     "titulo": "",
@@ -19,11 +19,11 @@ Tabela: 'livro':
         "nome": "",
         "email": ""
     }
-}
+
 
 Tabela 'bibliotecario':
 
-{
+
 
     {    
         "nome": "",
