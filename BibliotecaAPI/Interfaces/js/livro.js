@@ -94,6 +94,7 @@ function exibirLivros(livros) {
 }
 
 // Função para adicionar livro
+//  async Pode esperar operações demoradas (como API)
 async function adicionarLivro(event) {
     event.preventDefault();
     

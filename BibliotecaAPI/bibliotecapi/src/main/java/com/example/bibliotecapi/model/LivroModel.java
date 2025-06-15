@@ -32,7 +32,7 @@ public class LivroModel {
     @Column(name = "dataCadastro", nullable = false)
     private LocalDate dataCadastro = LocalDate.now(); 
 
-    @ManyToOne
+    @ManyToOne // Muitos livros podem ter um mesmo bibliotecário
     @JoinColumn(name = "bibliotecario_id", referencedColumnName = "id")
     private BibliotecarioModel bibliotecario;
 }
