@@ -95,6 +95,7 @@ function exibirLivros(livros) {
 
 // Função para adicionar livro
 //  async Pode esperar operações demoradas (como API)
+// await serve para pausar a execução de uma função async e aguardar a conclusão de uma operação
 async function adicionarLivro(event) {
     event.preventDefault();
     
