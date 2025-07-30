@@ -31,4 +31,5 @@ Tabela 'bibliotecario':
 
 
 # Git Clone
-1. git clone https://github.com/vilela21/BibliotecaAPI
+1. git clone https://github.com/vilela21/BibliotecaAPI.git
+2. cd BibliotecaAPI
