@@ -28,3 +28,7 @@ Tabela 'bibliotecario':
         "nome": "",
         "email": ""
     }
+
+
+# Git Clone
+1. git clone https://github.com/vilela21/BibliotecaAPI
